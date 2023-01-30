@@ -1,6 +1,9 @@
-import { Html, Head, Main, NextScript } from 'next/document'
+/* eslint-disable require-jsdoc */
+import React from "react";
+import type { ReactElement } from "react";
+import { Html, Head, Main, NextScript } from "next/document";
 
-export default function Document() {
+const Document = (): ReactElement => {
   return (
     <Html lang="en">
       <Head />
@@ -9,5 +12,7 @@ export default function Document() {
         <NextScript />
       </body>
     </Html>
-  )
-}
+  );
+};
+
+export default Document;
